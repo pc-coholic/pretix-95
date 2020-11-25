@@ -1,0 +1,3 @@
+[submodule "pretix_95/static/pretix_95/bootstrap-theme-Win95"]
+	path = pretix_95/static/pretix_95/bootstrap-theme-Win95
+	url = https://github.com/litheory/bootstrap-theme-Win95.git

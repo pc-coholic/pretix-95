@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'pixM8pt';
+    src: url(static('pretix_95/fonts/pixM8pt/pixM8pt.eot'));
+    src: url(static('pretix_95/fonts/pixM8pt/pixM8pt.eot?#iefix')) format('embedded-opentype'),
+        url(static('pretix_95/fonts/pixM8pt/pixM8pt.woff2')) format('woff2'),
+        url(static('pretix_95/fonts/pixM8pt/pixM8pt.woff')) format('woff'),
+        url(static('pretix_95/fonts/pixM8pt/pixM8pt.ttf')) format('truetype'),
+        url(static('pretix_95/fonts/pixM8pt/pixM8pt.svg#pixM8pt')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    font-family: pixM8pt, Courier New, DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+}
