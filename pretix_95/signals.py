@@ -25,7 +25,7 @@ def nav_topbar(sender, request=None, **kwargs):
     if request.session.get('pretix95', True):
         return [{
             'label': _('What is this?!'),
-            'url': 'https://www.pretix.eu/about/{}/social/doodles/'.format(
+            'url': 'https://www.pretix.eu/about/{}/social/doodles/?from=navbar'.format(
                 'de' if 'de' in request.LANGUAGE_CODE else 'en'
             ),
         }, {

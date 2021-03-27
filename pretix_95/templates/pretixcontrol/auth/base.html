@@ -35,9 +35,9 @@
     {% if request.session.pretix95 != False %}
         <p class="text-center">
             {% if "de" in request.LANGUAGE_CODE %}
-                <a href="https://www.pretix.eu/about/de/social/doodles/">
+                <a href="https://www.pretix.eu/about/de/social/doodles/?from=login">
             {% else %}
-                <a href="https://www.pretix.eu/about/en/social/doodles/">
+                <a href="https://www.pretix.eu/about/en/social/doodles/?from=login">
             {% endif %}
                     {% trans "What is this?!" %}
                 </a>
