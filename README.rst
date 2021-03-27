@@ -25,6 +25,7 @@ Acknowledgements
 ----------------
 - `litheory's Bootstrap Theme：Win95`_
 - `Leo Leontev's Windows 95 Sans Serif TTF`_
+- `Fonts Arena's W95FA font`_
 
 License
 -------
@@ -40,3 +41,4 @@ Released under the terms of the Apache License 2.0
 .. _pretix development setup: https://docs.pretix.eu/en/latest/development/setup.html
 .. _litheory's Bootstrap Theme：Win95: https://litheory.github.io/bootstrap-theme-Win95/demo.html
 .. _Leo Leontev's Windows 95 Sans Serif TTF: https://stackoverflow.com/a/54023769
+.. _Fonts Arena's W95FA font: https://fontsarena.com/w95fa-by-fontsarena/

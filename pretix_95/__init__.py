@@ -1,4 +1,6 @@
 import os
+import pytz
+from django.utils.timezone import now
 from django.utils.translation import gettext_lazy
 
 try:
@@ -26,6 +28,9 @@ class PluginApp(PluginConfig):
         from django.conf import settings
 
         from . import signals  # NOQA
+        if not settings.DEBUG and not 'staging.pretix.eu' in settings.SITE_URL and now().astimezone(
+                pytz.timezone('Europe/Berlin')).date().isoformat() != '2019-04-01':
+            return
 
         # Yes. Seriously. Sorry, not sorry.
         settings.TEMPLATES[0]['OPTIONS']['context_processors'].append('pretix_95.context.contextprocessor')

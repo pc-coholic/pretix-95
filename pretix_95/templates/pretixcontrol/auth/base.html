@@ -32,6 +32,21 @@
     <a href="{% url "control:auth.login" %}">
         <img src="{% static "pretixbase/img/pretix-logo.svg" %}" class="logo"/>
     </a>
+    {% if request.session.pretix95 != False %}
+        <p class="text-center">
+            {% if "de" in request.LANGUAGE_CODE %}
+                <a href="https://www.pretix.eu/about/de/social/doodles/">
+            {% else %}
+                <a href="https://www.pretix.eu/about/en/social/doodles/">
+            {% endif %}
+                    {% trans "What is this?!" %}
+                </a>
+            &nbsp;|&nbsp;
+            <a href="?pretix95=off">
+                {% trans "Switch back to classic pretix" %}
+            </a>
+        </p>
+    {% endif %}
     {% if messages %}
         {% for message in messages %}
             <div class="alert {{ message.tags }}">
