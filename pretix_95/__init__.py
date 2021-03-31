@@ -29,7 +29,7 @@ class PluginApp(PluginConfig):
 
         from . import signals  # NOQA
         if not settings.DEBUG and not 'staging.pretix.eu' in settings.SITE_URL and now().astimezone(
-                pytz.timezone('Europe/Berlin')).date().isoformat() != '2019-04-01':
+                pytz.timezone('Europe/Berlin')).date().isoformat() != '2021-04-01':
             return
 
         # Yes. Seriously. Sorry, not sorry.
